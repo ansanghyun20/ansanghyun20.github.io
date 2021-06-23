@@ -75,3 +75,17 @@ print(soup.select('태그 이름 입력'))
 
 ```
 
+- 글만 추출하기
+
+
+```python
+import requests
+from bs4 import BeautifulSoup     # module import
+
+soup = BeautifulSoup(open(r'/Users/hyun/Desktop/shopping/shopping.html'), 'html$
+
+a = soup.select('.title')           
+
+for i in a:
+        print(i.string)
+```
