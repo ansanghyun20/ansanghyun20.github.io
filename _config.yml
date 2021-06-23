@@ -134,12 +134,12 @@ yat:
 #   - tags.html
 #   - about.md
 
-# Page default value
-# defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
-#     banner: "Your image url"
+ Page default value
+ defaults:
+   home:
+     heading: "Helllo! I'm Sanghyun An"
+     subheading: "App Developer"
+     banner: "Your image url"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
