@@ -55,3 +55,15 @@ fi.close()
 ### 태그로 검색
 
 
+```python
+
+import requests
+from bs4 import BeautifulSoup     # module import
+
+soup = BeautifulSoup(open(r'/Users/hyun/Desktop/shopping/shopping.html'), 'html.parser')
+
+print(soup.select('태그 아이디 입력'))
+
+
+```
+
