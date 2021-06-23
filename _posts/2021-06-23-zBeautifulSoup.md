@@ -47,9 +47,11 @@ fi.close()
 
 실행 및 결과
 
+파일을 실행해서 결과를 확인할 수 있고 내용을 확인할 수 있습니다.
+
 ![image](https://user-images.githubusercontent.com/62547169/123041036-bb8c0800-d42f-11eb-8627-ab27c77c2505.png)
 
-파일을 실행해서 결과를 확인할 수 있고 내용을 확인할 수 있습니다.
+
 
 
 ### select 검색
