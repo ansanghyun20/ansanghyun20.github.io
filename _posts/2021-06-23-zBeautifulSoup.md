@@ -52,7 +52,15 @@ fi.close()
 파일을 실행해서 결과를 확인할 수 있고 내용을 확인할 수 있습니다.
 
 
-### 태그로 검색
+### select 검색
+
+find 보다 속도가 빠르고 직관적이다.
+
+
+- id            ->              #id             or      태그#id
+- class         ->              .class          or      태그.class
+- 태그 > 자식태그
+- 태그 > 자손태그
 
 
 ```python
@@ -62,7 +70,7 @@ from bs4 import BeautifulSoup     # module import
 
 soup = BeautifulSoup(open(r'/Users/hyun/Desktop/shopping/shopping.html'), 'html.parser')
 
-print(soup.select('태그 아이디 입력'))
+print(soup.select('태그 이름 입력'))
 
 
 ```
