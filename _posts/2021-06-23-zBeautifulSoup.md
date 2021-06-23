@@ -7,17 +7,17 @@ tags: [beautifulsoup]
 sidebar: []
 ---
 
-This library is used for web crawling.
+이 라이브러리는 웹 크롤링을 하기 위해서 사용됩니다.
 
-### How to install BeautifulSoup
+### BeautifulSoup 설치하는 방법
 
-pip shell command
+pip shell command를 이용합니다.
 
 ```cmd
 % pip install beautifulsoup
 ```
 
-### A brief example of BeautifulSoup
+### BeautifulSoup 간단한 예제
 
 beautifulsoup.py
 
@@ -45,8 +45,6 @@ fi.close()
 
 ```
 
-Run and Result
+실행 및 결과
 
-![image](https://user-images.githubusercontent.com/62547169/123040643-0f4a2180-d42f-11eb-896e-6801edfb3a2f.png)
-
-
+![image](https://user-images.githubusercontent.com/62547169/123040643-0f4a2180-d42f-11eb-896e-6801edfb3a2파일을 실행해서 결과를 확
