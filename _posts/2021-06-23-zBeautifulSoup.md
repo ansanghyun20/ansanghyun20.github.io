@@ -57,10 +57,10 @@ fi.close()
 find 보다 속도가 빠르고 직관적이다.
 
 
-- id            ->              #id             or      태그#id
-- class         ->              .class          or      태그.class
-- 태그 > 자식태그     ->      바로 아래 태그
-- 태그 > 자손태그     ->      아래의 모든 태그
+- id            ->              `#id명             or      태그#id명`
+- class         ->              `.class명          or      태그.class명`
+-` 태그 > 자식태그`     ->      바로 아래 태그
+- `태그  자손태그`     ->      아래의 모든 태그
 
 
 ```python
