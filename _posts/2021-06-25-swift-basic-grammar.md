@@ -1,7 +1,7 @@
 ---
 layout: post
-title: BeautifulSoup
-subtitle: BeautifulSoup
+title: Swift Syudy! - 1
+subtitle: Swift
 categories: swift
 tags: [swift]
 ---
