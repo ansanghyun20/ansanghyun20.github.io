@@ -12,6 +12,11 @@ tags: [swift]
 스위프트의 기초적인 문법부터 알아간다.
 ```
 
+맥의 PlayGround앱을 사용하는데 화면은 아래와 같다.
+
+![image](https://user-images.githubusercontent.com/62547169/123423570-aca58100-d5fa-11eb-9c46-a8f05a06d9cd.png)
+
+
 ### 변수
 
 변수 작성 규칙은 다음과 같다. 주의사항은 주석에!
@@ -44,7 +49,6 @@ String
 Int
 Double
 Float
-
 ```
 
 
@@ -75,3 +79,25 @@ v = 123
 print(v)
 
 ```
+
+
+### 배열
+
+Swift에서 배열을 쓰는 방법은 다양한 것 같다.
+
+기본적으로 쓰는 방법은 자바의 제네릭같이 생긴 것도 쓴다.
+
+```swift
+
+var arr : Array<Int> = [1,2,3]
+print(arr)
+
+// 아래와 같이 사용할 수 있는데 나는 안쓸거같다.
+var arr2 : Array<Int> = Array<Int>(arrayLiteral: 1,2,3)
+print(arr2)
+
+```
+
+
+위와같이 
+위와같이 표
