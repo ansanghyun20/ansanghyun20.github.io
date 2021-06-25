@@ -110,7 +110,7 @@ print(arr)
 
 위의 예제에서는 Int를 사용했는데 String 등 변수도 사용 가능하다.
 
-마지막으로 아래와 같이 사용할 수 있는데
+더하여 아래와 같이 사용할 수 있는데
 
 ```swift
 
@@ -133,6 +133,27 @@ var arr : [Int] = []
 var arr2 : Array<Int> = []
 arr2=[1,2,3]
 print(arr2)
+
+
+```
+
+#### 배열 알아두면 좋을 것
+
+```swift
+
+var arr : [Int] = []
+
+print(arr.isEmpty)         // 비어 있어?  -> true
+
+arr.append(1)              // 1 추가
+arr.append(2)              // 2 추가
+arr.append(3)              // 3 추가
+
+print(arr.isEmpty)         // 비어 있어?  -> false
+
+print(arr.count)           // 배열에 몇개 있어?  ->  3개
+
+print(arr[0])              // 배열에 어떻게 접근해? (만국공통)
 
 
 ```
