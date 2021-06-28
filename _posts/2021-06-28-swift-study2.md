@@ -55,5 +55,45 @@ print(a)
 By executing this code, you can see that the element has been added.
 
 
+#### It's good to know.
+
+
+```swift
+var a : Set = [1,2,3,1,1,1]
+a.insert(5)     // add element
+print(a.count)  // count
+print(a.contains(3))  // include?
+print(a.isEmpty)
+a.remove(3)
+print(a)
+print(a.max())  // max
+```
+
+![image](https://user-images.githubusercontent.com/62547169/123564599-f8237f00-d7f4-11eb-81b9-f00a2cde7675.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
