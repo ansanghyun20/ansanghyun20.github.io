@@ -6,16 +6,16 @@ categories: swift
 tags: [swift]
 ---
 
-이번에는 자료 구조 위주로 사용 방법을 알아본다.
+This time, I focused on the data structure.
 
 ### Set
 
-Set의 특징으로 알고 있는 것은 두 가직 있다.
+I know two characteristics about this.
 
-1. 순서가 없다.
-2. 중복된 데이터가 없다.
+1. There is no order.
+2. There is no duplicate data.
 
-위와 같은 두 가지 특징으로 예제를 통해서 알아본다.
+This can be found out through examples.
 
 ```swift
 
@@ -26,16 +26,33 @@ print(a)
 
 ![image](https://user-images.githubusercontent.com/62547169/123563752-54849f80-d7f1-11eb-90b7-4b0d6b77aeeb.png)
 
-자료형은 Set으로 사용할 수 있고 [  ] 안에다가 요소들을 나열할 수 있다.
+The datatype can be used as a Set and elements can be listed in [ ].
 
 
+#### Add elements
+
+In an arrangement, elements are added as follows.
+
+```swift
+var b : [Int] = [1,2,3]
+b.append(5)
+print(b)
+```
+
+So then, How to insert datatype at Set?
+
+Yeah, that's the insert.
+
+```swift
+var a : Set = [1,2,3,1,1,1]
+a.insert(5)
+print(a)
+```
+
+![image](https://user-images.githubusercontent.com/62547169/123564193-55b6cc00-d7f3-11eb-9743-3cb551b0c7d5.png)
 
 
-
-
-
-
-
+By executing this code, you can see that the element has been added.
 
 
 
