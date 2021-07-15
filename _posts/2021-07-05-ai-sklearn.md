@@ -15,7 +15,7 @@ sidebar: []
 
 #### 선형 회귀
 
-#### mlp
+#### Mlp Classification 와 Tensorflow 
 
 #### 1
 
