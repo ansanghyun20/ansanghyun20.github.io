@@ -41,7 +41,7 @@ model.save("model.h5")
 
 - convert
 
-```
+```python
 from tensorflow import keras
 model = keras.models.load_model('/Users/hyun/Desktop/Study/mask/Train Code(Python)/model.h5', compile=False)
 
