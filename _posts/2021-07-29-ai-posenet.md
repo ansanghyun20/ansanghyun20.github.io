@@ -18,5 +18,10 @@ tags: [AI]
 * https://github.com/rwightman/posenet-python
 
 
+### 8/20 추가
+
+PoseNet 라이브러리성능이 그닥 좋은 방법이 아닌거같다. 따라서 앞으로는 Mediapipe의 포즈 추정을 사용하는 방법을 공부한다.
+
+
 
 
