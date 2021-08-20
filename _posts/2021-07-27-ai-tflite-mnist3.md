@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 인공지능 - mnist
+title: 인공지능 - mnist를 TensorFlowLite로?
 subtitle: 인공지능
 categories: AI
 tags: [AI]
