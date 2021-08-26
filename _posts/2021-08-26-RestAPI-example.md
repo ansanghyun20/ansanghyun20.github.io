@@ -8,6 +8,8 @@ tags: [Web]
 
 ```
 이 예제는 아주 간단하게 테스트를 해보는 예제이다.
+이 코드는 http://127.0.0.1:5000/hello에 js에 적힌 data값을 flask로 전송한다.
+flask에서는 Post를 받아 data 딕셔너리에 값이 저장되는 코드이다.
 ```
 
 
@@ -56,5 +58,22 @@ if __name__ == "__main__":
 
 ```
 
+
+### 사용방법
+
+1. 우선 flask 서버를 실행한다.
+2. 그 후에 NodeJS코드를 실행해 본다.
+
+
+1. 전송
+
+![image](https://user-images.githubusercontent.com/62547169/130900678-53880194-42c2-45b1-b093-e6f7cb7c1887.png)
+
+
+
+2. 확인
+
+
+![image](https://user-images.githubusercontent.com/62547169/130900743-98334ead-99e1-4720-981b-b30e254d4586.png)
 
 
