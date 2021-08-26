@@ -1,8 +1,8 @@
 ---
 layout: post
-title: PoseNet을 사용해서 포즈 추정하기
+title: IITP_F - PoseNet을 사용해서 포즈 추정하기
 subtitle: 포즈 추정하는 방법
-categories: IITP_project
+categories: Project
 tags: [AI]
 ---
 
