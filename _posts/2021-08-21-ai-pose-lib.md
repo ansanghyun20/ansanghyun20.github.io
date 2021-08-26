@@ -2,7 +2,7 @@
 layout: post
 title: PoseNet과 Mediapipe성능 차이
 subtitle: 라이브러리간의 성능
-categories: IITP_project
+categories: Project
 tags: [AI]
 ---
 
