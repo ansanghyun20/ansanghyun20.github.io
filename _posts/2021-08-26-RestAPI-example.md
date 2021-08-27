@@ -65,13 +65,13 @@ if __name__ == "__main__":
 2. 그 후에 NodeJS코드를 실행해 본다.
 
 
-1. 전송
+3. 전송
 
 ![image](https://user-images.githubusercontent.com/62547169/130900678-53880194-42c2-45b1-b093-e6f7cb7c1887.png)
 
 
 
-2. 확인
+4 . 확인
 
 
 ![image](https://user-images.githubusercontent.com/62547169/130900743-98334ead-99e1-4720-981b-b30e254d4586.png)
