@@ -64,7 +64,7 @@ if __name__ == "__main__":
 1. 우선 flask 서버를 실행한다.
 2. 그 후에 NodeJS코드를 실행해 본다.
 
-
+ 
 3. 전송
 
 ![image](https://user-images.githubusercontent.com/62547169/130900678-53880194-42c2-45b1-b093-e6f7cb7c1887.png)
