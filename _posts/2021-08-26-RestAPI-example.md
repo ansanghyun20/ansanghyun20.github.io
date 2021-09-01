@@ -11,7 +11,7 @@ tags: [Web]
 이 코드는 http://127.0.0.1:5000/hello에 js에 적힌 data값을 flask로 전송한다.
 flask에서는 Post를 받아 data 딕셔너리에 값이 저장되는 코드이다. 
 ```
-
+ 
 
 ### NodeJS 샘플코드 
 
