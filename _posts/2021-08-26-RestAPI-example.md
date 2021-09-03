@@ -12,7 +12,7 @@ tags: [Web]
 flask에서는 Post를 받아 data 딕셔너리에 값이 저장되는 코드이다. 
 ```
  
-
+ 
 ### NodeJS 샘플코드 
 
 ```javascript
