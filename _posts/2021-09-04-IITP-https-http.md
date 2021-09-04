@@ -141,6 +141,7 @@ if __name__ == "__main__":
 ### Nginx 세팅
 
 
+conf.d -> default.conf
 
 ```
 
@@ -168,6 +169,44 @@ server {
         location / {
                 include proxy_params;
                 proxy_pass flask주소;
+        }
+}
+
+
+```
+
+
+site-available
+
+
+```
+server {
+         listen 443 ssl default_server;
+         listen [::]:443 ssl default_server;
+
+        ssl on;
+        server_name 도메인주소;
+
+        location / {
+                add_header 'Access-Control-Allow-Orgin' '*';
+                try_files $uri @app;
+        }
+
+        location @app {
+                include uwsgi_params;
+                uwsgi_pass unix: test.sock 경로;
+        }
+        ssl_certificate /etc/letsencrypt/live/도메인주소/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/도메인주소/privkey.pem;
+
+}
+
+
+server{
+        server_name 도메인주소;
+        listen 80;
+        location / {
+                return 307 https://도메인주소$request_uri;
         }
 }
 
