@@ -14,6 +14,8 @@ Node JS(local tunnel)사용
 
 Flask(OpenSSL로 https)
 
+Axios를 사용하는 이유 : 추정된 포즈값을 인공지능 서버로 보내기 위함
+
 1. Rest API를 Axios로 사용하던 중에 http를 통신하는데 전혀 문제가 되지 않았음
 2. WebRTC를 사용하기위해서는 https를 사용해야했고 그 속에서 Axios를 사용하기 위해서 https환경에서 해야했음
 3. https통신을 처음에는 Flask(AI server)에 OpenSSL인증서를 설치해 바로 통신
