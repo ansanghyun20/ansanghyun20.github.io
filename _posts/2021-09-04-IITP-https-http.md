@@ -36,3 +36,5 @@ Axios를 사용하는 이유 : 추정된 포즈값을 인공지능 서버로 보
 수정 전 : Node JS(local tunnel)          <->          Flask(AI Server)
 
 수정 후 : Node JS(local tunnel) <->     Nginx     <-> Flask(AI Server)
+
+여기서 Flask 에서 OpenSSL을 사용하지 않아도 되고 Nginx에서 바로 https를 적용해 Flask서버 또한 https에 접속 완료!
