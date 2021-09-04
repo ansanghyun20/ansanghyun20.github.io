@@ -152,7 +152,7 @@ server {
     error_log /var/log/nginx/error.log;
 
     location / {
-        return 307 https://zaba.website$request_uri;
+        return 307 https://도메인주소$request_uri;
     }
 }
 
