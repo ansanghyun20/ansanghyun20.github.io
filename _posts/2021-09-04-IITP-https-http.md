@@ -127,7 +127,49 @@ class TodoSimple(Resource):
 if __name__ == "__main__":
  #   ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS)                                                           //openSSL을 적용했던 흔적
 #    ssl_context.load_cert_chain(certfile='cert.pem', keyfile='key.pem')
-    app.run(debug=True, host='10.0.2.15' ,port = 5000 ) #, ssl_context=ssl_context)
+    app.run(debug=True, host='IP' ,port = 포트 ) #, ssl_context=ssl_context)
+
+
+```
+
+
+
+
+
+
+
+### Nginx 세팅
+
+
+
+```
+
+server {
+    listen       80;
+    server_name  도메인주소;
+
+    access_log /var/log/nginx/access.log;
+    error_log /var/log/nginx/error.log;
+
+    location / {
+        return 307 https://zaba.website$request_uri;
+    }
+}
+
+server {
+        listen 443;
+        listen [::]:443;
+        ssl on;
+        server_name 도메인주소;
+
+        ssl_certificate /etc/letsencrypt/live/도메인주소/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/도메인주소/privkey.pem;
+
+        location / {
+                include proxy_params;
+                proxy_pass flask주소;
+        }
+}
 
 
 ```
