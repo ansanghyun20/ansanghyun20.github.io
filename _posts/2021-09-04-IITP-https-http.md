@@ -38,3 +38,96 @@ Axios를 사용하는 이유 : 추정된 포즈값을 인공지능 서버로 보
 수정 후 : Node JS(local tunnel) <->     Nginx     <-> Flask(AI Server)
 
 여기서 Flask 에서 OpenSSL을 사용하지 않아도 되고 Nginx에서 바로 https를 적용해 Flask서버 또한 https에 접속 완료!
+
+
+
+
+
+### Flask 소스 코드
+
+```python
+
+
+import numpy as np
+import time
+import tensorflow as tf
+import ssl
+from flask_cors import CORS
+from tensorflow.keras.models import load_model # 인공지능 관련 라이브러리
+
+from flask import Flask, request
+from flask_restx import Resource, Api # flask 서버 관련 라이브러리
+
+import threading
+
+model = load_model('model.h5') # 포즈 추정모델을 사용하기 위함
+app = Flask(__name__)
+api = Api(app)
+
+CORS(app)
+
+todos = {}
+count = 1
+result = {}
+
+
+
+@api.route('/todos')
+class TodoPost(Resource):
+    def post(self):
+        global count
+        global todos
+        global result
+        idx = count
+        count += 1
+
+        exercise = request.json.get('kind')
+        print("ExerciseKind:", exercise)
+        if exercise == "kind_squat":
+        # Rest API 가져오기
+            name = request.json.get('name')
+            postData = request.json.get('data')
+
+            reshapeData = np.array(list(map(int,postData)))
+            modelPredict = model.predict(np.reshape(reshapeData, (1,2,14)))
+            if list(modelPredict[0]).index(max(modelPredict[0])) == 0:
+                result[name] = "Stand"
+            elif list(modelPredict[0]).index(max(modelPredict[0])) == 1:
+                result[name] = "Squat"
+            elif list(modelPredict[0]).index(max(modelPredict[0]))==2:
+                result[name] = "Bent"
+            print(result)
+
+        return {
+            'name': name,
+            'data': postData
+        }
+
+
+@api.route('/todos/result')
+class TodoSimple(Resource):
+    def get(self):
+        return {
+            'AllData': result,
+        }
+
+    def put(self, todo_id):
+        todos[todo_id] = request.json.get('data')
+        return {
+            'todo_id': todo_id,
+            'data': todos[todo_id]
+        }
+
+    def delete(self, todo_id):
+        del todos[todo_id]
+        return {
+            "delete" : "success"
+        }
+
+if __name__ == "__main__":
+ #   ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS)                                                           //openSSL을 적용했던 흔적
+#    ssl_context.load_cert_chain(certfile='cert.pem', keyfile='key.pem')
+    app.run(debug=True, host='10.0.2.15' ,port = 5000 ) #, ssl_context=ssl_context)
+
+
+```
