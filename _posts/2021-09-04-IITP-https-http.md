@@ -9,7 +9,7 @@ tags: [Web]
 ### 사건 발단
 
 Node JS(WebRTC 및 포즈 추정) <-> Flask(AI Server) Axios통신중 문제
-
+ 
 Node JS(local tunnel)사용
 
 Flask(OpenSSL로 https)
