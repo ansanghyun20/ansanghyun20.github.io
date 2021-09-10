@@ -20,7 +20,7 @@ WebRTC는 서버를 거치지 않고 사용자끼리 영상을 연결해주는 �
 
 이를 위해서 아래의 개념들을 공부를 해봤다.
 
-#### Sturn? Turn? 개념??
+### Sturn? Turn? 개념??
 
 아직 Sturn과 turn의 개념에 대해 정확히 알지 못했다.
 
@@ -47,11 +47,3 @@ LocalTunner, Ngrok로 https 환경을 만들어 주는 것이 문제였다.
 
 
 
-src/main/java  ->  java 소스코드
-
-src/main/resources  ->  propertise에 관련된 소스코드
-
-
-반응형 웹: 반응에 따라서 변화하는 웹 사이트
- 
-적응형 웹: 모바일, PC 등 템플릿이 따로 필요한 웨 사이트
