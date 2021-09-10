@@ -58,7 +58,7 @@ flask 폴더
 
 test.ini
 
-![image](https://user-images.githubusercontent.com/62547169/132802358-95fef539-019d-4423-b223-c2101f5acdf3.png)
+![image](https://user-images.githubusercontent.com/62547169/132802596-d680b913-88dd-4b5a-8f7a-8b1bdfdd58f8.png)
 
 wsgi.py
 
