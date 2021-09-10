@@ -6,7 +6,7 @@ categories: JavaScript
 tags: [Web]
 ---
 
-## WebRTC
+## WebRTC 
 
 WebRTC는 서버를 거치지 않고 사용자끼리 영상을 연결해주는 기술이다.
 
