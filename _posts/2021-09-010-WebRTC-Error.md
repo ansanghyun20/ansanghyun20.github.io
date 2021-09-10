@@ -34,9 +34,9 @@ WebRTC는 서버를 거치지 않고 사용자끼리 영상을 연결해주는 �
 
 ### 그래서 어떻게 해결?
 
-LocalTunner, Ngrok로 https 환경을 만들어 주는 것이 문제였다.
+`LocalTunner, Ngrok로 https 환경을 만들어 주는 것이 문제였다.`
 
-그래서 NodeJS에서 바로 OpenSSL을 적용할 수 있는 환경을 만들어 주었다.
+그래서 `NodeJS에서 바로 OpenSSL`을 적용할 수 있는 환경을 만들어 주었다.
 
 통신이 생각보다 매끄럽게 이전보다 잘 됐다.
 
