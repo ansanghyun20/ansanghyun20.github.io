@@ -1,3 +1,10 @@
+---
+layout: post
+title: Spring Boot -> Node JS POST
+subtitle: Spring Boot -> Node JS POST 방법
+categories: JavaScript
+tags: [project]
+---
 
 ### Spring 에서 Node JS에 UserId Post 요청 해서 html에 출력하는 것
 
