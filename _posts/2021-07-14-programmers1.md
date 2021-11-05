@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 프로그래머스 기능 개발
-subtitle: 인공지능
-categories: CodingTest
-tags: [CodingTest]
+subtitle: 프로그래머스 기능 개발
+categories: codingTest
+tags: [codingTest]
 ---
 
 ### 프로그래머스 - 기능개발
