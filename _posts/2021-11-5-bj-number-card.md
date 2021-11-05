@@ -10,12 +10,16 @@ tags: [codingTest]
 
 https://www.acmicpc.net/problem/10816
 
+### 입력
+
 입력을 4가지를 받는다.
 
 1. 첫 번째 배열의 길이
 2. 첫 번째 배열
 3. 두 번째 배열의 길이
 4. 두 번째 배열
+
+### 문제 이해
 
 문제의 이해는 다음과 같다.
 
@@ -28,14 +32,13 @@ https://www.acmicpc.net/problem/10816
 
 ## 1. 이분 탐색
 
-
 일반 적인 이분 탐색은 값을 하나 찾는 것이다.
 
 여기서 이분 탐색은 중복되는 수가 있을 경우 첫 자리와 끝 자리의 배열 번호를 리턴해주는 함수로 만든다.
 
 각각 lowerSearch, upperSearch가 되겠다.
 
-### lowerSearch의 경우
+### lowerSearch
 
 `if arr[mid]>=key:` 으로 key 값에 대해 arr[mid]값이 크거나 동일할 때 last를 mid로 바꿔주며 해당하는 중복된 번호의 첫 번째 숫자를 찾아간다.
 
