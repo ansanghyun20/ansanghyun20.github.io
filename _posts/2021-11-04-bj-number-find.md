@@ -6,11 +6,11 @@ categories: codingTest
 tags: [codingTest]
 ---
 
-# 백준 수 찾기 문제 풀이
+### 백준 수 찾기 문제 풀이
 
 https://www.acmicpc.net/problem/1920
 
-### 입력
+#### 입력
 
 입력을 4가지를 받는다.
 
@@ -20,4 +20,4 @@ https://www.acmicpc.net/problem/1920
 4. 두 번째 배열
 
 
-### 문제이해
+#### 문제이해
