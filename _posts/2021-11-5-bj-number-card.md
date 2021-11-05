@@ -27,7 +27,7 @@ https://www.acmicpc.net/problem/10816
 
 첫 번째 시도는 이분 탐색을 응용해서 시도 하였는데 이분 탐색을 모두 끝까지 시도해 시간 초과 오류를 발생하였다.
 
-따라서 lower 탐색, upper 탐색 방법을 사용해 문제를 해결할 수 있었고 해시를 사용해 쉽게 해결이 가능하였다.
+따라서 `lower 탐색, upper 탐색 방법을 사용해 문제를 해결`할 수 있었고 `해시`를 사용해 쉽게 해결이 가능하였다.
 
 
 # 1. 이분 탐색
@@ -101,3 +101,31 @@ for i in A2:
 ```
 
 # 2. 해시
+
+해시는 복잡한 알고리즘을 요구하지 않았다.
+
+1. 먼저 각 해당하는 수(key)의 중복된 값(value)을 만든다. (첫 번째 for문에서 만들어준다)
+2. 두 번째로 입력받은 배열에 대해 해당 중복된 값을 출력해주면 된다.
+
+```python
+
+M = int(input())
+A = list(map(int,input().split()))
+M2 = int(input())
+A2 = list(map(int,input().split()))
+
+dic ={}
+
+for i in A:
+    try:
+        dic[i] += 1
+    except:
+        dic[i] = 1
+
+for i in A2:
+    try:
+        print(dic[i], end = " ")
+    except:
+        print(0, end =" ")
+
+```
