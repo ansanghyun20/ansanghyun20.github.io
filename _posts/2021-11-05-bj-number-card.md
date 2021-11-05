@@ -6,11 +6,11 @@ categories: codingTest
 tags: [codingTest]
 ---
 
-# 백준 숫자카드 문제 풀이
+### 백준 숫자카드 문제 풀이
 
 https://www.acmicpc.net/problem/10816
 
-### 입력
+#### 입력
 
 입력을 4가지를 받는다.
 
@@ -19,7 +19,7 @@ https://www.acmicpc.net/problem/10816
 3. 두 번째 배열의 길이
 4. 두 번째 배열
 
-### 문제 이해
+#### 문제 이해
 
 문제의 이해는 다음과 같다.
 
@@ -30,7 +30,7 @@ https://www.acmicpc.net/problem/10816
 따라서 `lower 탐색, upper 탐색 방법을 사용해 문제를 해결`할 수 있었고 `해시`를 사용해 쉽게 해결이 가능하였다.
 
 
-# 1. 이분 탐색
+### 1. 이분 탐색
 
 일반 적인 이분 탐색은 값을 하나 찾는 것이다.
 
@@ -38,7 +38,7 @@ https://www.acmicpc.net/problem/10816
 
 각각 lowerSearch, upperSearch가 되겠다.
 
-### lowerSearch
+#### lowerSearch
 
 `if arr[mid]>=key:` 으로 key 값에 대해 arr[mid]값이 크거나 동일할 때 last를 mid로 바꿔주며 해당하는 중복된 번호의 첫 번째 숫자를 찾아간다.
 
@@ -50,7 +50,7 @@ https://www.acmicpc.net/problem/10816
 4. key값(2)이 탐색된 mid보다 커지면 start를 mid+1로 중복된 2의 가장 앞자리 인덱스(2)를 가져온다. 
 5. start와 last가 같아지면 while문을 종료 하는 방식이다.
 
-### upperSearch
+#### upperSearch
 
 `if arr[mid]>key:` 으로 key 값에 대해 arr[mid]값이 클때 last를 mid로 바꿔주며 해당하는 중복된 번호의 초과하는 수를 찾아간다.
 
@@ -58,7 +58,7 @@ lowerSearch와 다른점은 부등호이다.
 
 부등호 하나로 찾고자 하는 값의 초과하는 값을 찾아갈 수 있다.
 
-### 소스코드
+#### 소스코드
 
 ```python
 
@@ -100,7 +100,7 @@ for i in A2:
 
 ```
 
-# 2. 해시
+### 2. 해시
 
 해시는 복잡한 알고리즘을 요구하지 않았다.
 
