@@ -7,7 +7,7 @@ tags: [codingTest]
 ---
 
 ### 백준 숫자카드 문제 풀이
-
+ 
 https://www.acmicpc.net/problem/10816
 
 #### 입력
