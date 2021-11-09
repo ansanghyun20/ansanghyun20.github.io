@@ -6,6 +6,12 @@ categories: codingTest
 tags: [codingTest]
 ---
 
+### 백준 랜선 자르기 문제 풀이
+
+https://www.acmicpc.net/problem/1654
+
+
+###
 
 A = list(map(int,input().split(" ")))
 B = []
