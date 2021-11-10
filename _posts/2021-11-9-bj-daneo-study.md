@@ -11,7 +11,7 @@ tags: [codingTest]
 https://www.acmicpc.net/problem/1157
 
 ### 소스코드
-
+ 
 ```python
 A = input().upper()
 A = list(A)
