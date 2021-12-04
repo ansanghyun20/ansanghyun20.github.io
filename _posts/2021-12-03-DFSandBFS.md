@@ -16,9 +16,10 @@ tags: [codingTest]
  
 #### 해결 아이디어
 
-- 
-- 
-- 
+-  https://ansanghyun20.github.io/algorithm/2021/12/03/DFS-BFS.html 응용
+- 그래프가 비어있을 때 방지문 하나 추가 (안하면 실패함)
+- DFS 경우 Stack에서 작은 수 부터 탐지를 위해 sort(reverse=True)
+- BFS 경우 일반적인 sort()
 
 ```python
 
