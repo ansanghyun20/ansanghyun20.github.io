@@ -1,0 +1,123 @@
+---
+layout: post
+title: 백준 - 반복수열
+subtitle: 백준 반복수열 문제 풀이
+categories: codingTest
+tags: [codingTest]
+---
+
+### 백준 반복수열
+
+
+
+### 소스코드
+ 
+#### DFS 기본 해결 문제
+
+- stdin을 사용하지 않으면 `시간초과`
+- DFS로 모든 경우의 수를 구하는 방법
+- del graph[n]으로 방문했던 키 삭제
+
+```python
+
+import sys
+def DFS(graph, lst_root, a):
+    cnt = 0
+    for i in range(a):
+        visited = []
+        stack = [lst_root[i]]
+        while stack:        
+            n = stack.pop()
+            if n not in visited:       
+                if n in graph:
+                    visited.append(n)
+                    stack += set(graph[n]) - set(visited)
+                    del graph[n]
+        if visited:
+            cnt +=1
+    return cnt
+
+graph = {}
+
+n = int(input())
+
+for i in range(0,n):
+    a = int(sys.stdin.readline())
+    ran = list(range(1,a+1))
+    lst = list(map(int,sys.stdin.readline().split()))
+
+    for i in range(0,a):
+            graph[ran[i]] = [lst[i]]
+            
+    print(DFS(graph,lst,a))
+
+```
+
+##### 결과
+
+- 입력
+
+```
+2
+8
+3 2 7 8 1 4 5 6
+10
+2 1 3 4 5 6 7 9 10 8
+```
+
+![image](https://user-images.githubusercontent.com/62547169/144690942-ee8fbfef-4298-4874-ab89-ddc119807200.png)
+
+
+
+
+#### DFS 응용 문제
+
+```
+1회전 마다 해당하는 순회를 모두 1로 만들어주는 알고리즘
+```
+
+
+- visited를 [0, 0, 0 ...] 갯수만큼 지정
+- visited가 0일 때 카운트 증가
+- stack 0, 1, 2 ... 순으로 증가
+- num은 stack에서 pop
+- n은 lst(테스트 케이스에서 주어진 2번째 list)[num] 에 해당하는 값
+- visited[n]이 0 일 때 방문하지 않아도 되므로 1로
+- stack에 n 추가
+
+```python
+
+def DFS(lst, a):
+    cnt = 0
+    visited = [0] * a
+    for i in range(a):        
+        stack = [i]
+        if visited[i] == 0:
+            cnt += 1
+            visited[i]=1
+        while stack:
+            num = stack.pop()
+            n = lst[num]-1
+            if visited[n]==0:
+                visited[n]=1
+                stack.append(n)
+    return cnt
+
+n = int(input())
+for i in range(0,n):
+    a = int(input())
+    ran = list(range(1,a+1))
+    lst = list(map(int,input().split()))
+    print(DFS(lst, a))
+    
+```
+
+
+##### 결과
+
+
+
+![image](https://user-images.githubusercontent.com/62547169/144691046-341d27c6-e94a-4ef5-a113-400ebceb08f1.png)
+
+
+
