@@ -1,7 +1,7 @@
 ---
 layout: post
 title: React Native 권한오류
-subtitle: 내 마음대로 권한 오류
+subtitle: 내 마음대로 권한 오류
 categories: React Native
 tags: [React Native]
 ---
