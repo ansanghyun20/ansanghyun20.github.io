@@ -24,12 +24,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Sanghyun.Dev
+title: Sanghyun
 email: ansanghyun20@naver.com
 author: Sanghyun
 copyright: Copyright © 1970-2010
 description: >- # this means to ignore newlines until "baseurl:"
-  개발 블로그 입니다!
+  클라우드 개발자
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
